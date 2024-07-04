@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Restoran</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #532648;
+            box-shadow: 0 1px 2px rgba(182, 22, 105, 0.1);
+        }
+        .navbar-restoran {
+            color: #928989;
+            font-weight:inherit;
+            font-size: 1rem;
+        }
+        .jumbotron {
+            background-image: url('/resimler/resim.jpg');
+            background-size: cover;
+            color: #dad0da; 
+            text-align: center;
+            padding: 3rem 3rem;
+            margin-bottom: 0;
+        }
+        .form-baslik {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .form-bilgi {
+            margin-bottom: 1.5rem;
+        }
+        .form-control {
+            border-radius: 5px;
+            padding: 0.75rem;
+            font-size: 1rem;
+        }
+        .btn-primary {
+            background-color: #bb1a83;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #1d2124;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-restoran" href="#">Burger Restoran</a>
+        </div>
+    </nav>
+
+    <header class="jumbotron">
+        <div class="container">
+            <h1 class="display-4">Kullanıcı Kayıt</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="kayit-form">
+                    <h2 class="form-baslik">Kullanıcı Kayıt Formu</h2>
+                    <form>
+                        <div class="form-bilgi">
+                            <label for="fullname"><strong>Adınız</strong></label>
+                            <input type="text" class="form-control" id="fullname" placeholder="Lütfen bu alana adınız giriniz.">
+                        </div>
+                        <div class="form-bilgi">
+                            <label for="fullname"><strong>Soyadınız</strong></label>
+                            <input type="text" class="form-control" id="fullname" placeholder="Lütfen bu alana soyadınızı giriniz.">
+                        </div>
+                        <div class="form-bilgi">
+                            <label for="username"><strong>Kullanıcı Adı</strong></label>
+                            <input type="text" class="form-control" id="username" placeholder="Lütfen bir kullanıcı adı belirleyiniz.">
+                        </div>
+                        <div class="form-bilgi">
+                            <label for="email"><strong>E-posta Adresi</strong></label>
+                            <input type="email" class="form-control" id="email" placeholder="Lütfen bu alana e-posta adresinizi giriniz.">
+                        </div>
+                        <div class="form-bilgi">
+                            <label for="password2"><strong>Şifre </strong></label>
+                            <input type="password" class="form-control" id="password2" placeholder="Lütfen kurallara uygun bir şifre oluşturunuz.">
+                          <i>Parolanız en az 8 en çok 20 karakter uzunluğunda olmalı ve sadece rakamlardan oluşmalıdır.</i></div>
+                        </div>
+                        <div class="form-bilgi">
+                            <label for="password2"><strong>Şifre Tekrar</strong></label>
+                            <input type="password" class="form-control" id="password2" placeholder="Şifre Tekrar">
+                        </div>
+                        <div class="form-bilgi">
+                            <label for="birthdate"><strong>Doğum Tarihi</strong></label>
+                            <input type="date" class="form-control" id="birthdate">
+                        </div>
+                        <div class="form-bilgi">
+                            <label for="address"><strong>Adres</strong></label>
+                            <textarea class="form-control" id="address" rows="3" placeholder="Lütfen bu alana adresinizi giriniz."></textarea>
+                        </div>
+                        <div class="form-bilgi">
+                            <label for="phone"><strong>Telefon Numarası</strong></label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Lütfen telefon numaranızı başında '0' olmadan giriniz">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Kayıt Ol</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

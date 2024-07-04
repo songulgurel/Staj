@@ -1,0 +1,37 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+.navbar {
+    background-color: #532648;
+    box-shadow: 0 1px 2px rgba(182, 22, 105, 0.1);
+}
+.navbar-restoran {
+    color: #928989;
+    font-weight:inherit;
+    font-size: 1rem;
+}   
+.form-baslik {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.form-bilgi {
+    margin-bottom: 1.5rem;
+}
+.form-control {
+    border-radius: 5px;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+.btn-primary {
+    background-color: #bb1a83;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #1d2124;
+}

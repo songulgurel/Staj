@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vue.js</title>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    </head>
+    <body>
+        <div id="ilk-uygulama">
+            <h2>İsim: {{ name }}</h2>
+            <p>Okul: {{ okul }}</p>
+            <h1>Bölüm: {{ bolum }}</h1>
+            <p>Yaş {{ age }}</p>
+            <br>
+            <p>Sınavdan geçti mi?: {{ sinav.gecti }}</p>
+            <p>Aldığı not: {{ sinav.not }}</p>
+            <p> Harf notu: {{ sinav.harfnot }}</p>
+            <br>
+            <p>1. Dil: {{ diller[0] }}</p>
+            <p>2. Dil: {{ diller[4] }}</p>
+            <p> {{ hesapla ("Songül", "Gürel", "akşamlar") }}</p>
+            <p> {{ name }}</p>
+
+        </div>
+    </body>
+    <script src="app.js"></script>
+</html>
+ 
