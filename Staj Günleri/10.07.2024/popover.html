@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>poppver</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h5>Örnek 1</h5>
+<div class="container">
+    <div class="list-inline">
+      <button title="Başlık" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Açıklama">Yukarı</button>
+      <button title="Başlık" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Açıklama">Aşağı</button>
+      <button title="Başlık" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Açıklama">Sol</button>
+      <button title="Başlık" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Açıklama">Sağ</button>
+    </div>
+  </div>
+  <h5>Örnek 2</h5>
+  <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Bu alana metin girişi yapılabilir.">
+    Yukarı
+  </button>
+  
+  <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Bu alana metin girişi yapılabilir.">
+    Sağ
+  </button>
+  
+  <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Bu alana metin girişi yapılabilir.">
+    Aşağı
+  </button>
+  
+  <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Bu alana metin girişi yapılabilir.">
+    Sol
+  </button>
+<h5>Örnek 3</h5>
+<span class="d-inline-block" data-toggle="popover" data-content="Devre dışı popover">
+    <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Devre dışı</button>
+  </span>
+
+ <h5>Örnek 4</h5>
+ <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover başlığı" data-content="Bu alana metin girişi yapılabilir.">Popover için tıklayınız.</button> 
+<script>
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();   
+});
+</script>
+
+</body>
+</html>
