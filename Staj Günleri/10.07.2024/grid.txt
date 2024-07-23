@@ -1,7 +1,0 @@
-sm: sm sınıfı eklediğimizde small cihazların altındaki çözünürlükte (576px) kolonlar alt alta gelecektir.
-Örnek: col-sm-3 sınıfları ile 12 kolonluk satırı 4 eşit parçaya bölmüş oluruz.
-Küçük ekranlar için tasarlanmıştır. Genellikle telefonlar ve tabletler gibi küçük cihazlar için kullanılır. 
-col-sm- ile başlayan sınıflar bu ekran boyutunda uygulanır.
-
-md: medium cihaz yani 768px' in altına indiği anda kolonlar alt alta gelecektir. Orta büyüklükteki ekranlar için tasarlanmıştır. 
-Çoğu dizüstü bilgisayarlar ve büyük tabletler bu kategoriye girer. col-md- ile başlayan sınıflar bu ekran boyutunda uygulanır.
