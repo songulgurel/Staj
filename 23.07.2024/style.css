@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Temel stil ayarlamaları */   
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+/* Lİnkler */
+a{
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+a:hover{
+    color: #4361ee;
+}
+
+/* Sayfa arka planı */  
+body{
+    background-color: #f8f8f8;
+}
+
+/* Navbar */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+/* Sol taraftaki logo ve linkler */
+nav .sol{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav .sol .logo img{
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+}
+
+nav .sol .linkler{
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav .butonlar{
+    display: flex;
+    gap: 14px;
+}
+
+/* Sağ üst taraftaki butonlar */
+nav .butonlar a{
+    background-color: #eaf4f4;
+    padding: 10px;
+    color: #2d6a4f;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+/* Header */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    justify-content: center;
+    text-align: center;
+    gap: 26px;
+    background-color: #fff;
+    opacity: 0.8;
+    background-image:  radial-gradient(#4c709f 0.75px, transparent 0.75px), radial-gradient(#55d8da 0.75px, #ffffff 0.75px);
+    background-size: 30px 30px;
+    background-position: 0 0,15px 15px;
+}
+
+header .bilgi h1{
+    font-weight: 900;
+    background: #fff;
+}
+
+header .bilgi p{
+    color: #666;
+    font-size: 18px;
+    margin-top: 14px;
+    font-weight: bold;
+    background: #fff;
+}
+
+header .butonlar{
+    display: flex;
+    gap: 14px;
+    margin-top: 10px;
+}
+
+header .butonlar button{
+    border: none;
+    padding: 8px;
+    width: 140px;
+    border-radius: 10px;
+    background-color: #777;
+    color: #fff;
+    cursor: pointer;
+}
+
+header .butonlar button.see-all{
+    background-color: #4c709f;
+}
+
+header .arama{
+    position: relative;
+    width: 30%;
+    margin-top: 10px;
+}
+
+header .arama input{
+    width: 100%;
+    padding: 18px 20px;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0px 4px 70px -10px rgba(0, 0, 0, 0.6);
+    outline: none;
+}
+
+header .arama button{
+    position: absolute;
+    right: 0;
+    padding: 12px;
+    font-size: 24px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* content alanı */
+.icerik{
+    background-color: #f8f8fa;
+    padding: 100px 80px 0;
+}
+
+.icerik .ayirici{ /* İçerik seçicilerinin */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+/* selector içindeki linkler*/
+.icerik .ayirici a,
+.icerik .bloglar .item .bottom a{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: #2d6a4f;
+    font-size: 14px;
+}
+
+.icerik .ayirici a i,
+.icerik .bloglar .item .bottom a i{
+    font-size: 18px;
+}
+/* Kurslar ve Podcastler alanı */
+.icerik .kurslar,
+.icerik .podcastler{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    margin-bottom: 100px;
+}
+/* Kurs ve Podcast öğeleri */
+.icerik .kurslar .item,
+.icerik .podcastler .item{
+    width: 30%;
+}
+/* Kurs ve Podcast öğe içeriği */
+.icerik .kurslar .item .top,
+.icerik .kurslar .item .bottom,
+.icerik .podcastler .item .top,
+.icerik .podcastler .item .bottom,
+.icerik .bloglar .item .top,
+.icerik .bloglar .item .bottom{
+    display: flex;
+    gap: 10px;
+    background-color: #fff;
+    padding: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    border-bottom: 1px dashed #888;
+}
+/* Kurslar içindeki resim */
+.icerik .kurslar .item .top img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* Kurs ve Podcast başlıkları ve açıklamaları */
+.icerik .kurslar .item .top .bilgi a,
+.icerik .podcastler .item .top .bilgi a{
+    display: block;
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: 8px;
+    line-height: 1.4rem;
+}
+
+
+.icerik .kurslar .item .top .bilgi p,
+.icerik .podcastler .item .top .bilgi p{
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+/* Kurs ve Podcast alt bilgileri */
+.icerik .kurslar .item .bottom,
+.icerik .podcastler .item .bottom,
+.icerik .bloglar .item .bottom{
+    border-bottom: none;
+    justify-content: space-between;    
+    border-top: 1px dashed #888;
+}
+
+.icerik .kurslar .item .bottom .fiyat p{
+    color: #888;
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+.icerik .kurslar .item .bottom h5.tag,
+.icerik .kurslar .item .bottom .indirim > h5,
+.icerik .podcastler .item .bottom h5,
+.icerik .bloglar .item .bottom h5{
+    font-weight: 500;
+    background-color: #fff2b2;
+    color: #db7c26;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 13px;
+}
+
+/* Etiketlerdeki metin ağırlıkları */
+.icerik .kurslar .item .bottom h5.tag span,
+.icerik .kurslar .item .bottom .indirim > h5 span,
+.icerik .podcastler .item .bottom h5 span,
+.icerik .bloglar .item .bottom h5 span{
+    font-weight: bold;
+}
+
+/* Kurs indirim bölümü */
+.icerik .kurslar .item .bottom .indirim{
+    display: flex;
+    gap: 10px;
+}
+
+.icerik .kurslar .item .bottom .indirim > h5{
+    background-color: #b7e4c7;
+    color: #2d6a4f;
+}
+
+.icerik .kurslar .item .bottom .indirim .zaman{
+    text-align: center;
+}
+
+.icerik .kurslar .item .bottom .indirim .zaman p{
+    color: #888;
+    font-size: 12px;
+}
+
+.icerik .kurslar .item .bottom .indirim .zaman h5{
+    font-size: 13px;
+}
+
+.icerik .yorumlar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 0 0 100px;
+}
+
+/* Yorumlar */
+.icerik .yorumlar > p{  
+    width: 65%;
+    color: #2d6a4f;
+    font-size: 20px;
+}
+/* Sağ taraftaki yorum öğeleri */
+.icerik .yorumlar .sag{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 14px;
+}
+/* Her bir yorum öğesi */
+.icerik .yorumlar .sag .item{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #fff;
+    padding: 8px;
+    width: 32%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+/* Yorum öğelerindeki resimler */
+.icerik .yorumlar .sag .item img{
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+/* Yorum öğelerindeki paragraflar */
+.icerik .yorumlar .sag .item p{
+    font-size: 14px;
+}
+/* Podcastlerdeki öğelerin ilki */
+.icerik .podcastler .item .top i{
+    font-size: 40px;
+    background-color: #7f859e;
+    padding: 12px;
+    color: #fff;
+    border-radius: 10px;
+}
+/* Podcastlerdeki öğelerin ikincisi */
+.icerik .podcastler .item:nth-child(2) .top i{
+    background-color: #fa62a7;
+}
+/* Podcastlerdeki öğelerin üçüncüsü */
+.icerik .podcastler .item:nth-child(3) .top i{
+    background-color: #6e0fc8;
+}
+/* Podcastlerdeki öğelerin butonlarındaki süre alanı */
+.icerik .podcastler .item .bottom .sure{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+/* Podcastlerdeki öğelerin butonlarındaki süre alanı */
+.icerik .podcastler .item .bottom .sure i{
+    font-size: 26px;
+    color: #2d6a4f;
+}
+
+.icerik .podcastler .item .bottom .sure p{
+    color: #2d6a4f;
+    font-size: 13px;
+}
+
+.icerik .podcastler .item .bottom h5{
+    background-color: #ede0d4;
+    color: #9c6644;
+}
+
+/* BLoglar bölümü */
+.icerik .bloglar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.icerik .bloglar .item{
+    width: 23%;
+}
+
+.icerik .bloglar .item .top{
+    flex-direction: column;
+}
+
+.icerik .bloglar .item .top img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+/* footer alanı */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 100px 30px;
+    background-color: #4c709f; 
+    color: #fff;
+    border-radius: 40px 40px 0 0;
+}
+
+footer .columns{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .columns .col{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+footer .columns .col.last{
+    flex: 3;
+}
+
+footer .columns .col h5{
+    margin-bottom: 14px;
+    font-size: 16px;
+}
+
+footer .columns .col a{
+    margin-bottom: 4px;
+    color: #ccc;
+    font-size: 14px;
+}
+
+footer .columns .col a:hover{
+    color: #fff;
+}
+
+footer .columns .col.last p{
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+footer .columns .col.last .social-linkler{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .columns .col.last .social-linkler i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer .copysag{
+    margin-top: 50px;
+    font-size: 13px;
+}
+
+/* Ekran genişliği 1200px'i geçtiğinde */
+@media screen and (max-width:1200px) {
+    
+    nav{
+        padding: 0 60px;
+    }
+
+    header .arama{
+        width: 50%;
+    }
+
+    .icerik{
+        padding: 100px 60px 0;
+    }
+
+    .icerik .kurslar .item .top,
+    .icerik .kurslar .item .bottom,
+    .icerik .bloglar .item .bottom{
+        flex-direction: column;
+    }
+
+    .icerik .kurslar .item .top img{
+        width: 100%;
+        height: 180px;
+    }
+
+    .icerik .kurslar .item .bottom .fiyat{
+        text-align: center;
+    }
+
+    .icerik .kurslar .item .bottom .indirim{
+        justify-content: space-between;
+    }
+
+    .icerik .kurslar .item .bottom h5.tag{
+        text-align: center;
+    }
+
+    .icerik .kurslar .item .bottom .indirim > h5{
+        width: 70%;
+        text-align: center;
+    }
+
+    .icerik .yorumlar{
+        flex-direction: column;
+    }
+
+    .icerik .yorumlar > p{
+        width: 100%;
+        font-size: 16px;
+    }
+
+}
+/* Ekran genişliği 940px'i geçtiğinde */
+@media screen and (max-width: 940px) {
+    
+    nav .sol .logo{
+        display: none;
+    }
+
+    .icerik .kurslar .item,
+    .icerik .bloglar .item{
+        width: 45%;
+    }
+
+    .icerik .kurslar .item .bottom .indirim > h5{
+        width: 80%;
+    }
+
+    .icerik .yorumlar .sag .item{
+        width: 48%;
+    }
+
+    .icerik .podcastler .item .top,
+    .icerik .podcastler .item .bottom{
+        flex-direction: column;
+    }
+
+    .icerik .podcastler .item .top i{
+        text-align: center;
+        padding: 18px;
+    }
+
+    .icerik .podcastler .item .bottom{
+        text-align: center;
+    }
+
+    .icerik .bloglar .item .top img{
+        height: 220px;
+    }
+
+    footer{
+        padding: 60px 70px 30px;
+    }
+
+    footer .columns{
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    footer .columns .col,
+    footer .columns .col.last{
+        width: 45%;
+        flex: none;
+    }
+
+}
+/* Ekran genişliği 768px'i geçtiğinde */
+@media screen and (max-width:768px) {
+    
+    nav{
+        padding: 0 30px;
+    }
+
+    nav .sol .linkler{
+        font-size: 13px;
+        gap: 14px;
+    }
+
+    nav .butonlar a:first-child{
+        display: none;
+    }
+
+    header .bilgi h1{
+        font-size: 26px;
+    }
+
+    header .bilgi p{
+        font-size: 16px;
+    }
+
+    header .arama{
+        width: 70%;
+    }
+
+    .icerik{
+        padding: 100px 30px 0;
+    }
+
+    .icerik .kurslar .item .top{
+        height: 324px;
+    }
+
+    .icerik .kurslar .item .bottom .indirim .zaman{
+        display: none;
+    }
+
+    .icerik .kurslar .item .bottom .indirim > h5{
+        width: 100%;
+    }
+
+    .icerik .bloglar .item .top img{
+        height: 160px;
+    }
+
+    footer{
+        padding: 60px 50px 30px;
+    }
+
+}
+/* Ekran genişliği 576px'i geçtiğinde */
+@media screen and (max-width:576px) {
+    
+    nav .sol .linkler a:nth-child(5),
+    nav .sol .linkler a:nth-child(6){
+        display: none;
+    }
+
+    .icerik .kurslar .item .top .bilgi a,
+    .icerik .podcastler .item .top .bilgi a{
+        font-size: 14px;
+    }
+
+    .icerik .yorumlar .sag .item p{
+        font-size: 13px;
+    }
+
+    .icerik .podcastler .item .top .bilgi p{
+        font-size: 11px;
+    }
+
+    .icerik .podcastler .item .bottom .sure i{
+        font-size: 20px;
+    }
+
+    footer{
+        padding: 60px 30px 30px;
+    }
+
+}
