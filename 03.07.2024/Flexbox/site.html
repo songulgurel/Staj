@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+        <title> Örnek Site </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/site.css">
+        </head>
+        <body>
+        <div class="ornek">
+            <img src="resim.jpg" width="300" height="300" class="sola-kaydir">
+            <form>
+                <div class="mb-3">
+                    <b>Kullanıcı Girişi</b><br>
+                  <label for="kullaniciadi" class="form-label">Kullanıcı Adı</label>
+                  <input type="kullaniciadi" class="form-control" id="kullaniciadi" aria-describedby="kullaniciad">
+                </div>
+                <div class="mb-3">
+                  <label for="sifre" class="form-label">Şifre</label>
+                  <input type="sifre" class="form-control" id="sifre">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="benihatirla">
+                  <label class="form-check-label" for="benihatirla">Beni Hatırla</label>
+                </div>
+              </form>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="kvkk" id="kvkk" value="option1">
+                <label class="form-check-label" for="kvkk">
+                  KVKK Aydınlanma metnini okudum, kabul ediyorum.
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="secilmis" value="option3">
+                <label class="form-check-label" for="secilmis">
+                  Çerez kullanımına izin veriyorum.
+                </label><br>
+              <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+                <option selected>Doğduğunuz günü seçiniz</option>
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+                </select>
+            
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option selected>Doğduğunuz ayı seçiniz</option>
+                  <option value="1">Ocak</option>
+                  <option value="2">Şubat</option>
+                  <option value="3">Mart</option>
+                  <option value="4">Nisan</option>
+                  <option value="5">Mayıs</option>
+                  <option value="6">Haziran</option>
+                  <option value="7">Temmuz</option>
+                  <option value="8">Ağustos</option>
+                  <option value="9">Eylül</option>
+                  <option value="10">Ekim</option>
+                  <option value="11">Kasım</option>
+                  <option value="12">Aralık</option>
+                </select> 
+            
+                <select class="form-select" aria-label="dogumyili">
+                  <option selected>Doğum yılınızı seçiniz</option>
+                  <option value="1">2004</option>
+                  <option value="2">2003</option>
+                  <option value="3">2002</option>
+                  <option value="4">2001</option>
+                  <option value="5">2000</option>
+                  <option value="6">1999</option>
+                  <option value="7">1998</option>
+                  <option value="8">1997</option>
+                  <option value="9">1996</option>
+                  <option value="10">1995</option>
+                  <option value="11">1994</option>
+                  <option value="12">1993</option>
+                  <option value="13">1992</option>
+                  <option value="14">1991</option>
+                  <option value="15">1990</option>
+                </select><br>       
+                <button type="kaydol" class="btn btn-primary">Kayıt Ol</button>
+
+
+              <h4>Staj Başvurusu için aşağıda belirtilen belgeleri sistemeye yükleyiniz.</h4>
+<p>  <label for="trancript" class="form-label">Transkript Belgesi: </label>
+                    <input class="form-control" type="file" id="trancript">
+                  </div>
+                  <div class="mb-3">
+                    <label for="ogrencibelge" class="form-label">Öğrenci Belgesi:</label>
+                    <input class="form-control" type="file" id="ogrencibelge" multiple>
+                  </div>
+                  <div class="mb-3">
+                    <label for="sgk" class="form-label">SGK Belgesi:</label>
+                    <input class="form-control" type="file" id="sgk" multiple>
+                  </div>
+                  <div class="mb-3">
+                    <label for="stajform" class="form-label">Staj başvuru formu:</label>
+                    <input class="form-control form-control-sm" id="stajform" type="file">
+                  </div>
+            </p>
+    <label for="il" class="form-label">İl</label>
+    <input class="form-control" list="datalistOptions" id="il" placeholder="Satj yapmak istediğiniz ili seçiniz.">
+    <datalist id="datalistOptions">
+    <option value="Adana">
+    <option value="Ankara">
+    <option value="Antalya">
+    <option value="Balıkesir">
+    <option value="Bursa">
+    <option value="Çanakkale">
+    <option value="Denizli">
+    <option value="Edirne">
+    <option value="Eskişehir">
+    <option value="İstanbul">
+    <option value="İzmir">
+    <option value="Kırklareli">
+    <option value="Nevşehir">
+    <option value="Şanlıurfa">
+    <option value="Tekirdağ">
+    <option value="Zonguldak">
+</datalist>
+
+               
+        </body>
+        </html>

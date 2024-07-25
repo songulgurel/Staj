@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+<head><title>Flexbox</title>
+<style>
+.flex-container-row {
+    flex-direction: row;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgb(122, 13, 217);
+}
+
+.flex-container-row > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+.flex-container-column {
+    flex-direction: column;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgb(45, 19, 68);
+}
+
+.flex-container-column > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;;
+}
+
+
+.flex-container-row-reverse {
+    flex-direction:row-reverse;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgb(144, 29, 52);
+}
+
+.flex-container-row-reverse > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+
+.flex-container-column-reverse {
+    flex-direction: column-reverse;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgb(29, 37, 125);
+}
+
+.flex-container-column-reverse > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+
+.align-start {
+  display: flex;
+  height: 200px;
+  align-items: flex-start;
+  background-color: rgb(76, 112, 147);
+}
+.align-start > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+
+.align-center {
+  display: flex;
+  height: 200px;
+  align-items: center;
+  background-color: rgb(76, 112, 147);
+}
+.align-center > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+
+.align-end {
+  display: flex;
+  height: 200px;
+  align-items:flex-end;
+  background-color: rgb(144, 49, 74);
+}
+.align-end > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+
+.align-stretch {
+  display: flex;
+  height: 200px;
+  align-items:stretch;
+  background-color: rgb(201, 115, 40);
+}
+.align-stretch > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+
+.justify-content-flex-start {
+  display: flex;
+  justify-content:flex-start;
+  background-color: rgb(48, 60, 71);
+}
+
+.justify-content-flex-start > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(43, 160, 74);
+}
+
+.justify-content-center > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+
+.justify-content-flex-end {
+  display: flex;
+  justify-content: flex-end ;
+  background-color: rgb(43, 160, 74);
+}
+
+.justify-content-flex-end > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+
+.justify-content-space-between {
+  display: flex;
+  justify-content:space-between ;
+  background-color: rgb(23, 115, 125);
+}
+
+.justify-content-space-between > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+
+.justify-content-space-around {
+  display: flex;
+  justify-content:space-around ;
+  background-color: rgb(141, 195, 14);
+}
+
+.justify-content-space-around > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+
+.justify-content-space-evenly {
+  display: flex;
+  justify-content:space-evenly ;
+  background-color: rgb(158, 40, 117);
+}
+
+.justify-content-space-evenly > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+
+.align-content-flex-start {
+  display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  overflow: scroll;
+  background-color: rgb(214, 186, 135);
+}
+
+.align-content-flex-start > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+.align-content-center {
+  display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: center;
+  overflow: scroll;
+  background-color: rgb(192, 36, 72);
+}
+
+.align-content-center > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+.align-content-flex-end {
+  display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  overflow: scroll;
+  background-color: rgb(145, 211, 211);
+}
+
+.align-content-flex-end > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+.align-content-stretch {
+  display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: stretch;
+  overflow: scroll;  
+  background-color: rgb(207, 156, 183);
+}
+
+.align-content-stretch > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+.align-content-space-between {
+  display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  overflow: scroll;  
+  background-color: rgb(151, 212, 76);
+}
+
+.align-content-space-between > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.align-content-space-around {
+  display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: space-around;
+  overflow: scroll;  
+  background-color: rgb(178, 36, 36);
+}
+
+.align-content-space-around > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+</style>
+</head>
+<body>
+
+
+    <h4>Direction-row </h4>
+      <div class="flex-container-row">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div> 
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+        <div>7</div>
+        <div>8</div> 
+        <div>9</div> 
+      </div>
+
+    <h4>Direction-column </h4>
+      <div class="flex-container-column">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+        <div>7</div>
+        <div>8</div> 
+        <div>9</div>
+      </div>
+
+    <h4>Direction-row-reverse </h4>
+      <div class="flex-container-row-reverse">
+       <div>1</div>
+       <div>2</div>
+       <div>3</div>  
+       <div>4</div>
+       <div>5</div>
+       <div>6</div>  
+       <div>7</div>
+       <div>8</div> 
+       <div>9</div>
+      </div>
+
+    <h4>Direction-column-reverse </h4>
+      <div class="flex-container-column-reverse">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+        <div>7</div>
+        <div>8</div> 
+        <div>9</div>
+      </div>
+
+    <h4>Align-items-start </h4>
+      <div class="align-start">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+        <div>7</div>
+        <div>8</div> 
+        <div>9</div>
+      </div>
+
+    <h4>Align-items-center </h4>
+      <div class="align-center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+        <div>7</div>
+        <div>8</div> 
+        <div>9</div>
+      </div>
+
+    <h4>Align-items-end </h4>
+      <div class="align-end">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+        <div>7</div>
+        <div>8</div> 
+        <div>9</div>
+      </div>
+
+    <h4>Align-items-stretch </h4>
+      <div class="align-stretch">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+        <div>7</div>
+        <div>8</div> 
+        <div>9</div>
+      </div>
+
+     <h4>Justify-content-flex-start </h4>
+      <div class="justify-content-flex-start">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+      </div>
+
+    <h4>Justify-content-center </h4>
+      <div class="justify-content-center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+      </div>
+
+    <h4>Justify-content-flex-end </h4>
+      <div class="justify-content-flex-end">
+         <div>1</div>
+         <div>2</div>
+         <div>3</div>  
+         <div>4</div>
+         <div>5</div>
+      </div>
+
+    <h4>Justify-content-space-between </h4>
+      <div class="justify-content-space-between">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+      </div>
+
+    <h4>Justify-content-space-around </h4>
+      <div class="justify-content-space-around">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+      </div>
+
+    <h4>Justify-content-space-evenly </h4>
+      <div class="justify-content-space-evenly">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+      </div>
+
+      <h4>Align-content-flex-start </h4>
+      <div class="align-content-flex-start">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+        <div>7</div>
+        <div>8</div> 
+        <div>9</div>
+      </div>
+
+      <h4>Align-content-center </h4>
+      <div class="align-content-center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+        <div>7</div>
+        <div>8</div> 
+        <div>9</div>
+      </div>
+
+      <h4>Align-content-flex-end </h4>
+      <div class="align-content-flex-end">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+        <div>7</div>
+        <div>8</div> 
+        <div>9</div>
+      </div>
+
+      <h4>Align-content-stretch </h4>
+      <div class="align-content-stretch">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+        <div>7</div>
+        <div>8</div> 
+        <div>9</div>
+      </div>
+
+      
+      <h4>Align-content-space-between </h4>
+      <div class="align-content-space-between">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+        <div>7</div>
+        <div>8</div> 
+        <div>9</div>
+      </div>
+      
+      <h4>Align-content-space-around </h4>
+      <div class="align-content-space-around">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div> 
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+        <div>7</div>
+        <div>8</div> 
+        <div>9</div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Button</title>
+<meta charset="utf-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <h5>1.Örnek</h5>
+    <button type="button" class="btn">Örnek 1</button><br>
+    <h5>2.Örnek</5><br>
+        <button type="button" class="btn btn-primary">Birincil</button>
+        <button type="button" class="btn btn-secondary">İkincil</button>
+        <button type="button" class="btn btn-success">Başarı</button>
+        <button type="button" class="btn btn-danger">Tehlike</button>
+        <button type="button" class="btn btn-warning">Uyarı</button>
+        <button type="button" class="btn btn-info">Bilgi</button>
+        <button type="button" class="btn btn-light">Beyaz</button>
+        <button type="button" class="btn btn-dark">Siyah</button><br>
+    <h5>3.Örnek</h5><!--Üzerinde aktif olup rengi beliriyor-->
+        <button type="button" class="btn btn-outline-primary">Birincil</button>
+        <button type="button" class="btn btn-outline-secondary">İkincil    </button>
+        <button type="button" class="btn btn-outline-success">Başarı</button>
+        <button type="button" class="btn btn-outline-danger">Tehlike</button>
+        <button type="button" class="btn btn-outline-warning">Uyarı</button>
+        <button type="button" class="btn btn-outline-info">Bilgi</button>
+        <button type="button" class="btn btn-outline-light">Beyaz</button>
+        <button type="button" class="btn btn-outline-dark">Siyah</button>
+        <button type="button" class="btn btn-link"><a href="https://getbootstrap.com/docs/5.3/components/buttons/" target="_blank">Buttons</a></button>
+    <h5>4.Örnek</h5><!--Aktif değil-->
+        <button type="button" class="btn btn-primary" disabled>Birincil buton</button>
+        <button type="button" class="btn btn-secondary" disabled>Buton</button>
+        <button type="button" class="btn btn-outline-primary" disabled>Birincil buton</button>
+        <button type="button" class="btn btn-outline-secondary" disabled>Buton</button>
+    <h5>5.Örnek</h5><!--Aktif değil(linkli)-->
+        <a class="btn btn-primary disabled" role="button" aria-disabled="true" href="ttps://getbootstrap.com/docs/5.3/components/buttons/">Birincil link</a>
+        <a class="btn btn-secondary disabled" role="button" aria-disabled="true" href="ttps://getbootstrap.com/docs/5.3/components/buttons/">Link</a>
+    <h5>6.Örnek</h5>
+    <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button">Onayla</button>
+        <button class="btn btn-primary" type="button">Gönder</button>
+      </div>
+    <h5>7.Örnek</h5><!--sola hizalı-->
+    <div class="d-grid gap-2 d-md-block">
+        <button class="btn btn-primary" type="button">Gönder</button>
+        <button class="btn btn-primary" type="button">Gönder</button>
+      </div>
+    <h5>8.Örnek</h5><!--ortada-->
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" type="button">Onayla</button>
+        <button class="btn btn-primary" type="button">Gönder</button>
+      </div>
+      <h5>9.Örnek</h5><!--Sağa hizalı-->
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">Button</button>
+        <button class="btn btn-primary" type="button">Button</button>
+      </div>
+      <h5>10.Örnek</h5><!--Sağa hizalı-->
+      <p class="d-inline-flex gap-1">
+        <button type="button" class="btn" data-bs-toggle="button">Aktif Buton</button>
+        <button type="button" class="btn active" data-bs-toggle="button" aria-pressed="true">Aktif Buton</button><!--Aktif ama kapalı halde geliyor-->
+        <button type="button" class="btn" disabled data-bs-toggle="button">Devre dışı buton</button>
+      </p>
+      <p class="d-inline-flex gap-1">
+        <button type="button" class="btn btn-primary" data-bs-toggle="button">Aktif Buton</button>
+        <button type="button" class="btn btn-primary active" data-bs-toggle="button" aria-pressed="true">Aktif Buton</button>
+        <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Devre dışı buton</button>
+      </p>
+      <h5>11.Örnek</h5>
+      <p class="d-inline-flex gap-1">
+        <a href="https://getbootstrap.com/docs/5.3/components/buttons/" target="_blank" class="btn" role="button" data-bs-toggle="button">Aktif link</a>
+        <a href="https://getbootstrap.com/docs/5.3/components/buttons/" class="btn active" role="button" data-bs-toggle="button" aria-pressed="true">Aktif link</a>
+        <a class="btn disabled" aria-disabled="true" role="button" data-bs-toggle="button">Devre dışı link</a>
+      </p>
+      <p class="d-inline-flex gap-1">
+        <a href="https://getbootstrap.com/docs/5.3/components/buttons/" class="btn btn-primary" role="button" data-bs-toggle="button">Aktif link</a>
+        <a href="https://getbootstrap.com/docs/5.3/components/buttons/" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Aktif link</a>
+        <a class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button">Devre dışı link</a>
+      </p>
+    </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </html>

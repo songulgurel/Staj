@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22.07.2024</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="gecis">
+            <div class="logo">
+                <img src="resimler/logo.png">
+                <h2>Songül<span class="danger"> Gürel</span></h2>
+            </div>
+            <div class="kapat" id="close-btn">
+                <span class="material-icons-sharp">
+                    close
+                </span>
+            </div>
+        </div>
+
+            <div class="kenar">
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Gösterge Paneli</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3>Kullanıcılar</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        receipt_long
+                    </span>
+                    <h3>Geçmiş</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        insights
+                    </span>
+                    <h3>Analizler</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        mail_outline
+                    </span>
+                    <h3>Mesajlar</h3>
+                    <span class="mesaj-sayisi">27</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        inventory
+                    </span>
+                    <h3>Satış Listesi</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        report_gmailerrorred
+                    </span>
+                    <h3>Şikayetler</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Ayarlar</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        add
+                    </span>
+                    <h3>Yeni Kullanıcı</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Çıkış</h3>
+                </a>
+            </div>
+        </aside>
+
+
+        <main>
+            <h1>Analizler</h1>
+            <div class="analiz">
+                <div class="satis">
+                    <div class="durum">
+                        <div class="bilgi">
+                            <h3> Toplam Satış</h3>
+                            <h1>1.254.487₺</h1>
+                        </div>
+                        <div class="ilerleme">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="yuzde">
+                                <p>+81%</p>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="ziyaretci">
+                    <div class="durum">
+                        <div class="bilgi">
+                            <h3>Site Ziyaretleri</h3>
+                            <h1>24.987</h1>
+                        </div>
+                        <div class="ilerleme">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="yuzde">
+                                <p>-48%</p>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="arama">
+                    <div class="durum">
+                        <div class="bilgi">
+                            <h3>Aramalar</h3>
+                            <h1>14.147</h1>
+                        </div>
+                        <div class="ilerleme">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="yuzde">
+                                <p>+21%</p>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+
+            <!-- Yeni Kullancılar-->
+            <div class="yeni-kullanici">
+                <h2>Yeni Kullanıcılar</h2>
+                <div class="user-list">
+                    <div class="user">
+                        <img src="/resimler/profile-2.jpg">
+                        <h2>Ali</h2>
+                        <p>2 saat önce</p>
+                    </div>
+                    <div class="user">
+                        <img src="/resimler/profile-3.jpg">
+                        <h2>Ahmet</h2>
+                        <p>15 dakika önce</p>
+                    </div>
+                    <div class="user">
+                        <img src="/resimler/profile-4.jpg">
+                        <h2>Ayşe</h2>
+                        <p>Az önce</p>
+                    </div>
+                    <div class="user">
+                        <img src="/resimler/plus.png">
+                        <h2>Daha fazla</h2>
+                        <p>Yeni Kullanıcı</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Geçmiş-->
+            <div class="gecmis-siparisler">
+                <h2>Geçmiş Siparişler</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Kurs Adı</th>
+                            <th>Kurs Numarası</th>
+                            <th>Ödeme</th>
+                            <th>Durum</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <a href="#"> Hepsini Göster</a>
+            </div>
+        </main>
+
+        <!--Sağ kısım-->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+                <div class="profile">
+                    <div class="bilgi">
+                        <p>Hey, <b>Songül</b></p>
+                        <small class="text-muter">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="resimler/profile-1.jpg">
+                    </div>
+                </div>
+            </div>
+        
+        <div class="user-profile">
+            <div class="logo">
+                <img src="resimler/logo.png">
+                <h2>Songül Gürel</h2>
+                <p>Frond-end Developer</p>
+            </div>
+        </div>
+
+        <div class="reminders">
+            <div class="header">
+                <h2>Hatırlatıcılar</h2>
+                <span class="material-icons-sharp">
+                    notifications_none 
+                </span>
+            </div>
+
+            <div class="notification">
+                <div class="icon">
+                    <span class="material-icons-sharp">
+                        volume_up
+                    </span>
+                </div>
+
+            <div class="content">
+                <div class="bilgi">
+                    <h3>Atölye</h3>
+                    <small class="text_muted">
+                        08.00-00.00
+                    </small>
+                </div>
+                <span class="material-icons-sharp">
+                    more_vert
+                </span>
+            </div>
+        </div>
+        
+        <div class="notification deactive">
+            <div class="icon">
+                <span class="material-icons-sharp">
+                    edit
+                </span>
+            </div>
+            <div class="content">
+                <div class="bilgi">
+                    <h3>Atölye</h3>
+                    <small class="text_muted">
+                        08.00-00.00
+                    </small>
+                </div>
+                <span class="material-icons-sharp">
+                    more_vert
+                </span>
+            </div>
+        </div>
+
+        <div class="notification add-reminder">
+            <div>
+                <span class="material-icons-sharp">
+                    add
+                </span>
+                <h3>Hatırlatıcı Ekle</h3>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="orders.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

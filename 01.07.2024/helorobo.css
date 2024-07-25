@@ -1,0 +1,22 @@
+h3 {
+  color: rgb(185, 238, 252);
+}
+h2 {
+  color: rgb(233, 11, 44);
+}
+body {
+  background-color: rgb(166, 163, 185);
+}
+div {
+  color: rgb(221, 24, 159);
+}
+.sinif {
+  color: lightgreen;
+  text-align: center;
+}
+form{
+    color: rgb(0, 0, 0);
+}
+fieldset{
+  color:rgb(120, 44, 89);
+}

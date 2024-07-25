@@ -1,0 +1,127 @@
+--Bundler--
+"Bundler" terimi genellikle yazılım geliştirme ve paket yönetimi bağlamında kullanılan bir terimdir. 
+Özellikle modern web geliştirme projelerinde ve JavaScript ekosisteminde sıkça karşılaşılır.
+
+Bundler'lar, genellikle bir veya daha fazla JavaScript dosyasını veya kaynak kodlarını bir araya getirerek 
+tek bir dosyaya veya birkaç optimize edilmiş dosyaya dönüştüren araçlardır. Bu işlem genellikle şu amaçlarla yapılır:
+
+Performans ve Optimizasyon: Birden fazla JavaScript dosyasını birleştirerek HTTP istekleri sayısını 
+azaltmak ve yükleme süresini optimize etmek.
+
+Modülerlik Yönetimi: Modern JavaScript projeleri genellikle modüler yapıda olur. Bu modüller farklı dosyalarda 
+veya paketler halinde bulunabilir. Bundler'lar, bu modüllerin bağımlılıklarını çözerek bir araya getirir 
+ve çalışma zamanında kullanılabilir hale getirir.
+
+Kaynak Yönetimi: Özellikle büyük projelerde birçok bağımlılık olabilir. Bundler'lar, bu bağımlılıkları 
+yönetmek ve proje dosyalarını düzenlemek için kullanılır.
+
+Örnek olarak, popüler JavaScript bundler'ları şunlardır:
+Webpack: Çok yönlü bir JavaScript modül paketleme aracıdır. Modüler yapıları ve kaynak dosyalarını 
+optimize ederek tek bir çıktı dosyasına dönüştürür.
+
+Parcel: Hızlı, sıfır yapılandırma gerektiren bir JavaScript modül paketleyicisidir. Otomatik olarak paketleme, 
+kod bölümleme ve kaynak optimizasyonu yapar.
+
+Rollup: Özellikle kütüphane ve paket geliştirme için optimize edilmiş bir JavaScript modül paketleyicisidir. 
+ES6 modüllerini destekler ve etkin tree shaking (kullanılmayan kodları kaldırma) özelliği vardır.
+
+Bu araçlar, modern web uygulamalarının performansını artırmak ve geliştirme sürecini daha verimli hale getirmek 
+için yaygın olarak kullanılır.
+
+--Vite--
+Vite, modern web geliştirme için optimize edilmiş bir geliştirme sunucusu ve build aracıdır. 
+Özellikle Vue.js ve React gibi framework'lerle kullanım için tasarlanmıştır, ancak genel olarak 
+JavaScript ve TypeScript tabanlı projeler için uygundur.
+
+Vite'in temel özellikleri şunlardır:
+
+1. Hızlı Geliştirme Sunucusu: Vite, geliştirme sürecinde hız ve performans sağlamak için tasarlanmıştır. 
+Eşzamanlı modül işleme ve yalnızca ihtiyaç duyulan modüllerin işlenmesi gibi optimizasyonlar sayesinde, 
+geliştiriciye hızlı yeniden yükleme (fast refresh) ve hızlı başlatma sağlar.
+
+2. Hızlı Build Süresi: Vite, üretim için optimize edilmiş statik dosyaları hızlı bir şekilde oluşturur. 
+Bu, geliştirme sunucusundaki hızının yanı sıra, yayına hazır dosyaların oluşturulma süresinde de performans avantajı sağlar.
+
+3. ESModule (ESM) Desteği: Vite, modüllerinizi ESModule formatında işler. Bu, modern tarayıcılar ve Node.js 
+üzerinde daha etkin modül yükleme ve kullanım sağlar.
+
+4. Hot Module Replacement (HMR) Desteği: Geliştirme sunucusunda değişiklikler anında yansıtılır ve 
+sayfa yenilenmeden güncellemeleri görmek mümkün olur. Bu, geliştirme sürecinde verimliliği artırır.
+
+5. Plugin Sistemi: Vite, genişletilebilir bir yapıya sahiptir ve farklı ihtiyaçlara göre eklentiler (plugin'ler) ile özelleştirilebilir.
+
+6. TypeScript Desteği: TypeScript projeleriyle uyumlu çalışır ve TypeScript dosyalarını otomatik olarak işler.
+
+Vite, özellikle Vue.js ve React gibi framework'lerde, geliştirici deneyimini iyileştirmek 
+ve modern web uygulamalarını daha hızlı ve daha etkin bir şekilde geliştirmek için kullanılan önemli bir araçtır.
+
+--Bootstrap vue'ye nasıl entegre edilir?
+1.yol CDN ile entegre etmek
+-index.html Dosyası Üzerinden;
+Vue projenizin public veya src klasöründe index.html dosyasını bulun ve <head> etiketi içinde Bootstrap CDN'ini ekleyerek entegre edilebilir.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vue App</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <div id="app"></div>
+  <!-- Vue App -->
+  <script src="/dist/build.js"></script>
+  <!-- Bootstrap JS (optional, if you need JavaScript components) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+ya da 
+
+-Vue Component'i İçinde;
+Eğer sadece belirli Vue bileşenlerinizde Bootstrap kullanacaksanız, ilgili Vue bileşenlerinin <script> kısmında CDN dahil edebilir.
+<template>
+  <div>
+    <button class="btn btn-primary">Click me</button>
+  </div>
+</template>
+
+<script>
+export default {
+  // Vue bileşeni kodu buraya gelecek
+}
+</script>
+
+<!-- Bootstrap JS (optional, if you need JavaScript components) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+2. yol npm veya Yarn ile Bootstrap Entegrasyonu
+-Terminal veya komut istemcisinde projenizin kök dizininde şu komutu çalıştırarak Bootstrap paketini yükleyerek;
+npm install bootstrap@5.3.3
+# veya
+yarn add bootstrap@5.3.3
+
+main.js veya main.ts Dosyasında Kullanma
+Vue projenizin src/main.js veya src/main.ts dosyasında Bootstrap stil dosyalarını ve isteğe bağlı olarak Bootstrap JS dosyaları import edilebilir.
+import { createApp } from 'vue'
+import App from './App.vue'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+
+createApp(App).mount('#app')
+
+-Vue Component'lerinde Kullanma
+Vue component dosyalarınızda Bootstrap bileşenlerini normal HTML gibi kullanılabilir:
+
+<template>
+  <div>
+    <button class="btn btn-primary">Click me</button>
+  </div>
+</template>
+
+<script>
+export default {
+  // Vue bileşeni kodu buraya gelecek
+}
+</script>   
