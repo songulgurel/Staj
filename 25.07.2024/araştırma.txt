@@ -1,0 +1,82 @@
+Seçici                      Örnek                       Açıklama
+.class	                    .intro                      class=“intro” içeren tüm öğeleri seçer.
+.class1.class2	            .name1.name2                class içinde hem name1 hem de name2 ayarlı tüm öğeleri seçer.
+.class1 .class2             .name1 .name2               name1 öğesinin içindeki name2 öğesine sahip tüm öğeleri seçer.
+#id                         #firstname                  id=“firstname” olan öğeyi seçer.
+*                           *                           Tüm ögeleri seçer.
+element                     p                           Tüm <p> öğelerini seçer.
+element.class               p.intro                     class=“intro” içeren tüm <p> öğelerini seçer.
+element,element             div, p                      Tüm <div> öğelerini ve tüm <p> öğelerini seçer.
+element element             div p                       <div> öğelerinin içindeki tüm <p> öğelerini seçer.
+element>element             div > p                     Üst öğesi bir <div> öğesi olan tüm <p> öğelerini seçer.
+element+element	            div + p                     <div> öğelerinden hemen sonra yerleştirilen ilk <p> öğesini seçer.
+element1~element2           p ~ ul                      Önünde bir <p> öğesi bulunan her <ul> öğesini seçer.
+[attribute]                 [target]                    Hedef niteliğine sahip tüm öğeleri seçer.
+[attribute=value]           [target=“_blank”]           target=“_blank” olan tüm öğeleri seçer.
+[attribute~=value]          [title~=“flower”]           “flower” kelimesini içeren bir başlık niteliğine sahip tüm öğeleri seçer.
+[attribute|=value]          [lang|=“en”]                lang öznitelik değeri “en ‘e eşit olan veya ’en-” ile başlayan tüm öğeleri seçer.
+[attribute^=value]          a[href^=“https”]            href öznitelik değeri “https” ile başlayan her <a> öğesini seçer.
+[attribute$=value]          a[href$=“.pdf”]             href öznitelik değeri “.pdf” ile biten her <a> öğesini seçer.
+[attribute*=value]          a[href*=“w3schools”]        href öznitelik değeri “w3schools” alt dizesini içeren her <a> öğesini seçer.
+:active                     a:active                    Etkin bağlantıyı seçer.
+::after                     p::after                    Her <p> öğesinin içeriğinden sonra bir şey ekleyin.
+::before                    p::before                   Her <p> öğesinin içeriğinden önce bir şey ekleyin.
+:checked                    input:checked               Kontrol edilen her <input> öğesini seçer.
+:default                    input:default               Varsayılan <input> öğesini seçer.
+:disabled                   input:disabled              Devre dışı bırakılmış her <input> öğesini seçer.
+:empty                      p:empty                     children olmayan her <p> öğesini seçer. (metinler dahil)
+:enabled                    input:enabled               Etkinleştirilmiş her <input> öğesini seçer.
+:first-child                p:first-child               Sınıfın ilk ögesi olan her <p> öğesini seçer.
+::first-letter              p::first-letter             Her <p> öğesinin ilk harfini seçer.
+::first-line                p::first-line               Her <p> öğesinin ilk satırını seçer.
+:first-of-type              p:first-of-type             Sınıfın ilk <p> öğesi olan her <p> öğesini seçer.
+:focus                      input:focus                 Odağı olan girdi öğesini seçer.
+:fullscreen                 :fullscreen                 Tam ekran modunda olan öğeyi seçer.
+:has()                      h2:has(+p)                  Hemen ardından bir p öğesi gelen h2 öğelerini seçer ve stili h2'ye uygular
+:hover                      a:hover                     Fareyle üzerine gelindiğinde bağlantıları seçer.
+:in-range                   input:in-range              Belirli bir aralıkta değeri olan giriş öğelerini seçer.
+:indeterminate              input:indeterminate         Belirsiz durumda olan girdi öğelerini seçer.
+:invalid                    input:invalid               Geçersiz bir değere sahip tüm girdi öğelerini seçer.
+:lang()                     p:lang(it)                  lang niteliği “it” (İtalyanca) olan her <p> öğesini seçer.
+:last-child                 p:last-child                Sınıfın son ögesi olan her <p> öğesini seçer.
+:last-of-type               p:last-of-type              Sınıfın son <p> öğesi olan her <p> öğesini seçer.
+:link                       a:link                      Ziyaret edilmemiş tüm bağlantıları seçer.
+::marker                    ::marker                    Liste öğelerinin işaretleyicilerini seçer.
+:not()                      :not(p)                     <p> elemanı olmayan her elemanı seçer.
+:nth-child()                p:nth-child(2)              Sınıfın ikinci ögesi olan her <p> öğesini seçer.
+:nth-last-child()           p:nth-last-child(2)         Son ögeden itibaren sayarak, Sınıfın ikinci ögesi olan her <p> öğesini seçer.
+:nth-last-of-type()         p:nth-last-of-type(2)       Son ögeden itibaren sayarak, Sınıfın ikinci <p> öğesi olan her <p> öğesini seçer.
+:nth-of-type()              p:nth-of-type(2)            Sınıfın ikinci <p> elemanı olan her <p> elemanını seçer.
+:only-of-type               p:only-of-type              Sınıfın tek <p> öğesi olan her <p> öğesini seçer.
+:only-child                 p:only-child                Sınıfın tek ögesi olan her <p> öğesini seçer.
+:optional                   input:optional              “required” niteliği olmayan girdi öğelerini seçer.
+:out-of-range               input:out-of-range          Belirli bir aralığın dışında bir değere sahip girdi öğelerini seçer.
+::placeholder               input::placeholder          “placeholder” özniteliği belirtilen girdi öğelerini seçer.
+:read-only                  input:read-only             “readonly” niteliği belirtilen girdi öğelerini seçer.
+:read-write                 input:read-write            “readonly” niteliği belirtilmemiş girdi öğelerini seçer.
+:required                   input:required              “required” niteliği belirtilen girdi öğelerini seçer.
+:root                       :root                       Belgenin kök öğesini seçer.
+::selection                 ::selection                 Bir öğenin kullanıcı tarafından seçilen kısmını seçer.
+:target                     #news:target                Geçerli etkin #news öğesini seçer. (bu bağlantı adını içeren bir URL'ye tıklandığında)
+:valid                      input:valid                 Geçerli bir değere sahip tüm girdi öğelerini seçer.
+:visited                    a:visited                   Ziyaret edilen tüm bağlantıları seçer.
+
+Bundler;
+Bundler kullanımında oluşturulan paket kullandığı tüm paketleri / modülleri kendi içinde barındırır. 
+Bunu da dosyaları derleyerek, sıkıştırarak, birleştirerek yapar. 
+
+Bir bundler, geliştiricilerin ihtiyaç duyduğu araçları (eklentiler, alt araçlar vb.) bir arada, 
+uyumlu bir şekilde işleyen bir “meta araç” olarak ifade edilebilir1.
+Örneğin, JavaScript projelerinde kullanılan Webpack veya Parcel gibi araçlar, 
+kodu paketleyerek, modülleri birleştirerek ve performansı artırarak web uygulamalarını oluşturur.
+
+Bundler, web geliştirmede kullanılan ve bir uygulamanın kaynak dosyalarını tarayıcılar tarafından kullanılan 
+statik varlıklara dönüştüren bir araçtır. Paketleyicilerin birincil amacı, ön uç projelerindeki 
+modülleri ve bağımlılıkları düzenlemek, web sitesi performansını optimize etmek ve dosya boyutlarını azaltmaktır.
+
+
+
+
+
+
+
